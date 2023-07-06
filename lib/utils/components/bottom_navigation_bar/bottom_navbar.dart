@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_twitter_clone_ui/view/screens/twitter_home/twitter_home_screen.dart';
 import 'package:flutter_twitter_clone_ui/view/screens/twitter_messages/twitter_messages_screen.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../../../view/screens/twitter_notifications/twitter_notif_screen.dart';
 import '../../../view/screens/twitter_trends/twitter_trends_screen.dart';
+import '../../color.dart';
 
 class BottomNavBar extends StatefulWidget {
   final int currentIndex;
@@ -43,26 +45,37 @@ class _BottomNavBarState extends State<BottomNavBar> {
         ),
         selectedLabelStyle: const TextStyle(
           fontSize: 8,
-          fontWeight: FontWeight.w500,
-          color: Colors.blue,
+          color: Colors.transparent,
         ),
-        selectedIconTheme: const IconThemeData(color: Colors.blue),
-        unselectedIconTheme: const IconThemeData(color: Colors.grey),
+        selectedIconTheme: const IconThemeData(color: blueArchive),
+        unselectedIconTheme: const IconThemeData(color: cGrey),
         items: const [
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
+            icon: Icon(
+              FontAwesomeIcons.house,
+              size: 20,
+            ),
             label: '',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.search),
+            icon: Icon(
+              FontAwesomeIcons.magnifyingGlass,
+              size: 20,
+            ),
             label: '',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.notifications),
+            icon: Icon(
+              FontAwesomeIcons.bell,
+              size: 20,
+            ),
             label: '',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.mail),
+            icon: Icon(
+              FontAwesomeIcons.envelope,
+              size: 20,
+            ),
             label: '',
           ),
         ],
