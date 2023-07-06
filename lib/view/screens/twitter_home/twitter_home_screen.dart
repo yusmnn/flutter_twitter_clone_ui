@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter_twitter_clone_ui/utils/components/button/floating_button.dart';
 
 import '../../../utils/components/bottom_navigation_bar/bottom_navbar.dart';
 
@@ -22,6 +24,12 @@ class _TwitterHomeScreenState extends State<TwitterHomeScreen> {
       ),
       bottomNavigationBar: const BottomNavBar(
         currentIndex: 0,
+      ),
+      floatingActionButton: FloatingButton(
+        onTap: () {},
+        widget: SvgPicture.asset(
+          'assets/icons/add_text_icon.svg',
+        ),
       ),
     );
   }
