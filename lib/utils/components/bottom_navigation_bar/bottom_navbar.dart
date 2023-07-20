@@ -26,22 +26,22 @@ class _BottomNavBarState extends State<BottomNavBar> {
       decoration: const BoxDecoration(
         border: Border(
           top: BorderSide(
-            color: Colors.black,
-            width: 0.5,
+            color: Colors.grey,
+            width: 0.3,
           ),
         ),
       ),
       child: BottomNavigationBar(
         backgroundColor: Colors.white,
-        elevation: 0.0,
+        elevation: 0,
         currentIndex: widget.currentIndex,
         type: BottomNavigationBarType.fixed,
         selectedItemColor: Colors.blue,
-        unselectedItemColor: Colors.grey,
+        unselectedItemColor: cGrey,
         unselectedLabelStyle: const TextStyle(
           fontSize: 8,
           fontWeight: FontWeight.w500,
-          color: Colors.grey,
+          color: Colors.transparent,
         ),
         selectedLabelStyle: const TextStyle(
           fontSize: 8,
