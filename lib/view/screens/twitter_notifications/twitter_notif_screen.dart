@@ -65,6 +65,16 @@ class _TwitterNotifScreenState extends State<TwitterNotifScreen> {
                 labelColor: cBlack,
                 unselectedLabelColor: cGrey,
                 indicatorColor: cBlack,
+                indicatorWeight: 12,
+                indicatorSize: TabBarIndicatorSize.tab,
+                indicator: BoxDecoration(
+                  border: Border(
+                    bottom: BorderSide(
+                      color: blueArchive,
+                      width: 3,
+                    ),
+                  ),
+                ),
                 tabs: [
                   Tab(
                     text: 'All',

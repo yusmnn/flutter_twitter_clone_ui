@@ -54,10 +54,6 @@ class DetailProfile extends StatelessWidget {
                     width: double.infinity,
                     height: coverHeight,
                     decoration: BoxDecoration(
-                      borderRadius: const BorderRadius.only(
-                        topLeft: Radius.circular(10),
-                        topRight: Radius.circular(10),
-                      ),
                       image: DecorationImage(
                         image: NetworkImage(
                           banner,
@@ -68,7 +64,7 @@ class DetailProfile extends StatelessWidget {
                   ),
                 ),
                 Positioned(
-                  top: coverHeight / 3.5,
+                  top: coverHeight / 8,
                   child: ButtonIcon(
                     icon: const Icon(
                       Icons.arrow_back_ios_new_rounded,
