@@ -4,6 +4,9 @@
 https://www.figma.com/community/file/994821744813651089
 
 ### Demo
-https://github.com/yusmnn/flutter_twitter_clone_ui/assets/76932249/531a4980-1287-4517-9977-ee07b52cc4d6
+
+https://github.com/yusmnn/flutter_twitter_clone_ui/assets/76932249/80fa674d-b6c8-4d98-a809-7c550aa0e468
+
+
 
 
